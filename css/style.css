@@ -365,9 +365,10 @@ body {
 #logo,
 #subtitle {
   text-decoration: none;
-  color: #000;
-  font-weight: 300;
+  color: #fff;
+  font-weight: bold;
   text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  font-family: fantasy;
 }
 #logo {
   font-size: 40px;
@@ -389,8 +390,8 @@ body {
 .nav-icon,
 .main-nav-link {
   float: left;
-  color: #000;
-  opacity: 0.6;
+  color: #fff;
+  opacity: 1;
   text-decoration: none;
   text-shadow: 0 1px rgba(0,0,0,0.2);
   -webkit-transition: opacity 0.2s;
@@ -408,15 +409,16 @@ body {
   font-family: FontAwesome;
   text-align: center;
   font-size: 14px;
-  width: 14px;
-  height: 14px;
-  padding: 20px 15px;
+  width: 18px;
+  height: 18px;
+  padding: 25px 15px;
   position: relative;
   cursor: pointer;
 }
 .main-nav-link {
-  font-weight: 300;
+  font-weight: bold;
   letter-spacing: 1px;
+  font-size: 18px;
 }
 @media screen and (max-width: 479px) {
   .main-nav-link {
@@ -440,9 +442,11 @@ body {
 }
 #nav-rss-link:before {
   content: "\f09e";
+  font-size: large;
 }
 #nav-search-btn:before {
   content: "\f002";
+  font-size: large;
 }
 #search-form-wrap {
   position: absolute;
@@ -1293,6 +1297,7 @@ pre .javascript .function {
     float: left;
     width: 23.333333333333332%;
     margin: 0 0.833333333333333%;
+    margin-top: 30px;
   }
 }
 .widget-wrap {
@@ -1326,6 +1331,28 @@ pre .javascript .function {
 .widget dl dl {
   margin-left: 15px;
   list-style: disc;
+}
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  background: url("images/avatar.jpg") center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  border-radius: 50%;
+  border: 2px solid #0f9fb4;
+}
+.profile-name {
+  text-align: center;
+  margin-top: 8px;
+  font-size: 14px;
+  font-family: fantasy;
+  color: #808080;
+}
+.profile-signature {
+  text-align: center;
+  color: #a9a9a9;
 }
 .widget {
   line-height: 1.6em;
